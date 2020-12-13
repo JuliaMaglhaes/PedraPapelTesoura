@@ -14,9 +14,9 @@
                     <h2 id="jog-nome"> Jogador </h2>
                     <span id="jog-placar"> 0 </span>
                     <ul id="jog-escolha">
-                        <li><a href="jog-escolha-1"><img src="img/papel.png" alt="Papel"></a></li>
-                        <li><a href="jog-escolha-2"><img src="img/pedra.png" alt="Pedra"></a></li>
-                        <li><a href="jog-escolha-3"><img src="img/tesoura.png" alt="Tesoura"></a></li>
+                        <li><a id="jog-escolha-1" onclick="jogar(1)"><img src="img/papel.png" alt="Papel"></a></li>
+                        <li><a id="jog-escolha-2" onclick="jogar(2)"><img src="img/pedra.png" alt="Pedra"></a></li>
+                        <li><a id="jog-escolha-3" onclick="jogar(3)" ><img src="img/tesoura.png" alt="Tesoura"></a></li>
                     </ul>
                 </div>
 
@@ -27,19 +27,21 @@
                 <h2 id="com-nome"> Computador </h2>
                     <span id="com-placar"> 0 </span>
                         <ul id="com-escolha">
-                            <li><a href="com-escolha-1"><img src="img/papel.png" alt="Papel"></a></li>
-                            <li><a href="com-escolha-2"><img src="img/pedra.png" alt="Pedra"></a></li>
-                            <li><a href="com-escolha-3"><img src="img/tesoura.png" alt="Tesoura"></a></li>
+                            <li><a id="com-escolha-1"><img src="img/papel.png" alt="Papel"></a></li>
+                            <li><a id="com-escolha-2"><img src="img/pedra.png" alt="Pedra"></a></li>
+                            <li><a id="com-escolha-3"><img src="img/tesoura.png" alt="Tesoura"></a></li>
                         </ul>
             </div>
 
         </div>
 
+        <div id="status">Status</div>
         
         </div>
 
     </div>
 
+    <script type="text/javascript" src="script.js"></script>
 
 </body>
 </html>
