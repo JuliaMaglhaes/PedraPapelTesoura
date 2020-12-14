@@ -1,11 +1,13 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #add8e6;
 
 }
 
 
 #jogo{
     display:inline;
+    
 }
 
 
@@ -26,6 +28,7 @@
     align-items: center;
     justify-content: center;
     margin:20px;
+    
 }
 
 ul#jog-escolha, ul#com-escolha{
@@ -33,6 +36,8 @@ ul#jog-escolha, ul#com-escolha{
     margin:0;
     text-align: center;
     padding:0;
+    font-size: 0;
+    background-color: #eb5b5b;
 }
 
 ul#jog-escolha li, ul#com-escolha li{
@@ -55,6 +60,7 @@ ul#jog-escolha li a:hover,  ul#jog-escolha li a.selecionado, ul#com-escolha li a
 
 ul#jog-escolha li a img, ul#com-escolha li a img{
     max-width: 210px;
+    background-color: #eb5b5b;
 
 }
 
@@ -65,20 +71,24 @@ img{
 
 #com-nome{
     text-align: right;
+    background-color: #eb5b5b;
 }
 
 #jog-nome{
     text-align: left;
+    background-color: #eb5b5b;
 }
 
 #jog-placar{
     right: 20px;
+    background-color: #eb5b5b;
 }
 
 #jog-placar, #com-placar{
     position: absolute;
     top:10px;
     font-size: 30px;
+    background-color: #eb5b5b
 }
 
 #status{
