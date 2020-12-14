@@ -9,33 +9,16 @@ function jogar(escolha){
     jogEscolha = escolha;
     ComEscolha = Math.floor((Math.random()* (3-1 + 1)))+ 1;
 
-    if((jogEscolha == 1) && (ComEscolha==1)){
+    if(((jogEscolha == 1) && (ComEscolha==1)) || ((jogEscolha == 2) && (ComEscolha==2)) || ((jogEscolha == 3) && (ComEscolha==3))) {
         resultado = 0;
     }
-    else if((jogEscolha == 2) && (ComEscolha==2)){
-        resultado = 0;
-    }
-    else if((jogEscolha == 3) && (ComEscolha==3)){
-        resultado = 0;
-    }
-    else if((jogEscolha == 1) && (ComEscolha==2)){
+    else if(((jogEscolha == 1) && (ComEscolha==2)) || ((jogEscolha == 2) && (ComEscolha==3)) || ((jogEscolha == 3) && (ComEscolha==1))) {
         resultado = 1;
     }
-    else if((jogEscolha == 1) && (ComEscolha==3)){
+    else if(((jogEscolha == 1) && (ComEscolha==3)) || ((jogEscolha == 2) && (ComEscolha==1)) || ((jogEscolha == 3) && (ComEscolha==2))) {
         resultado = 2;
     }
-    else if((jogEscolha == 2) && (ComEscolha==1)){
-        resultado = 2;
-    }
-    else if((jogEscolha == 2) && (ComEscolha==3)){
-        resultado = 1;
-    }
-    else if((jogEscolha == 3) && (ComEscolha==1)){
-        resultado = 1;
-    }
-    else if((jogEscolha == 3) && (ComEscolha==2)){
-        resultado = 2;
-    }
+
     //remover
 
     document.getElementById("jog-escolha-1").classList.remove('selecionado');
@@ -66,6 +49,8 @@ function jogar(escolha){
         ComPlacar++;
     }
 
+
     document.getElementById('jog-placar').innerHTML = jogPlacar;
     document.getElementById('com-placar').innerHTML = ComPlacar;
+
 }
